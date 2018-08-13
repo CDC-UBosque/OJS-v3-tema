@@ -1,0 +1,119 @@
+/* =========================
+	body styles
+	=======================*/
+
+.buttons{
+	button[class*="submit"]{
+		@include buton-m-green;
+		box-shadow: none;
+		text-shadow: none;
+		font-weight: 200;
+		border: 0;
+		white-space: normal;	
+		&:hover{
+			box-shadow: none;
+			border: 0;
+		}
+	}
+}
+
+.btn-default{
+	@include buton-s-green;
+	transition: .3s ease-out all;
+	background: $color_brand;
+	text-shadow: none;
+	box-shadow: none;
+	white-space: normal;	
+	&:hover{
+		color: $color_brand_white;
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.btn-success{
+	@include buton-s-green;
+	transition: .3s ease-out all;
+	background: $color_brand;
+	text-shadow: none;
+	box-shadow: none;
+	white-space: normal;	
+}
+
+.btn-danger{
+	@include button-s-border-green;
+	transition: .3s ease-out all;
+	background: #ED2F39;
+	border: 1px solid #ED2F39;
+	color: $color_brand_white;
+	text-shadow: none;
+	box-shadow: none;
+	white-space: normal;	
+	&:hover{
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.btn-info, .btn-primary{
+	@include buton-s-border-green;
+	background: $color_brand_white;
+	//border-color: $color_brand;
+    //border: 0;
+    	padding: 6px 25px;
+    text-shadow: none;
+	box-shadow: none;
+	transition: .3s ease-out all;
+	&:hover, &:focus{
+		background: $color_brand;
+		color: $color_brand_white;
+		border-color: $color_brand;
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.btn-group{
+	
+	// current progress
+	.submitProgressButtonCurrent{
+		@include buton-s-green;
+		transition: .3s ease-out all;
+		background: $color_brand;
+		text-shadow: none;
+		box-shadow: none;
+		white-space: normal;	
+	}
+	
+	.submitProgressButtonNotDone{
+		@include buton-s-border-green;
+		background: $color_brand_white;
+		//border-color: $color_brand;
+	    //border: 0;
+	    	padding: 6px 25px;
+	    text-shadow: none;
+		box-shadow: none;
+		transition: .3s ease-out all;
+		white-space: normal;	
+		&:hover{
+			background: $color_brand;
+			color: $color_brand_white;
+			border-color: $color_brand;
+		}
+	}
+}
+
+.btn-warning{
+	@include buton-s-green;
+	transition: .3s ease-out all;
+	background: #FFA20D;
+	text-shadow: none;
+	box-shadow: none;
+	white-space: normal;	
+	&:hover{
+		background: #995E00;
+	}
+}

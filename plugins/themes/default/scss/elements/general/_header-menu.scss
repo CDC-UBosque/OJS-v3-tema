@@ -1,0 +1,37 @@
+/* ============== header menu OJS ============= */
+
+// hader menu container
+.pkp_structure_page{
+	
+	// -------------------
+	// Navigation top menu
+	.pkp_navigation_user_wrapper{
+		background: $color_brand;
+		position: initial;
+	}
+	
+	// -------------------
+	// Header element
+	.pkp_structure_head{
+		background: $color_brand_white;
+		
+		.pkp_head_wrapper{
+			padding: 0;
+			
+			.pkp_site_name{
+				line-height: initial;
+				
+				a{
+					padding: 0;
+					&:after{
+						display: none;
+					}
+				}
+			
+			}
+			
+		}
+		
+	}
+	
+}

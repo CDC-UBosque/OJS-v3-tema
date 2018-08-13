@@ -1,0 +1,30 @@
+// ------------------------------------ Global elements ------------------------------------ 
+//@import 'bootstrap';
+@import 'mixins';
+@import 'fonts';
+@import 'config';
+@import 'artifacts';
+@import 'layout';
+@import 'animate';
+@import 'base';
+
+// ------------------------------------ Custom styles ------------------------------------ 
+@import 'elements/general/_global.scss';
+@import 'elements/general/_body.scss';
+@import 'elements/general/_header-menu.scss';
+@import 'elements/general/_google-translate.scss';
+@import 'elements/general/_dropdown-menus.scss';
+@import 'elements/general/_breadcrumb.scss';
+@import 'elements/general/_buttons.scss';
+@import 'elements/general/_alerts.scss';
+@import 'elements/general/_labels.scss';
+@import 'elements/general/_forms.scss';
+@import 'elements/general/_panels.scss';
+@import 'elements/general/_list-items.scss';
+@import 'elements/general/_footer.scss';
+@import 'elements/general/_navbar.scss';
+
+// ------------------------------------ Pages styles ------------------------------------ 
+@import 'elements/pages/_communities.scss';
+@import 'elements/pages/_home.scss';
+@import 'elements/pages/_home-revistas.scss';

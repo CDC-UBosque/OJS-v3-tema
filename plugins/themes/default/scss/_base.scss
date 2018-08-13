@@ -1,0 +1,104 @@
+body{
+	background: $bg-body;
+	color: $color-font;
+	font-family: $font-AG-light;
+	font-size: $font-txt-l;
+	-webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+        overflow-x: hidden;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+a{
+	-webkit-transition: all 0.2s ease-in-out;                  
+    -moz-transition: all 0.2s ease-in-out;                 
+    -o-transition: all 0.2s ease-in-out;   
+    -ms-transition: all 0.2s ease-in-out;          
+    transition: all 0.2s ease-in-out;
+}
+
+::after, ::before{
+	-webkit-transition: all 0.2s ease-in-out;                  
+    -moz-transition: all 0.2s ease-in-out;                 
+    -o-transition: all 0.2s ease-in-out;   
+    -ms-transition: all 0.2s ease-in-out;          
+    transition: all 0.2s ease-in-out;
+}
+
+h1{
+	font-family: $font-AG-black;
+	font-size: $font-titles-xl;
+	line-height: $font-titles-xl;
+}
+
+h2{
+	font-family: $font-AG-black;
+	font-size: $font-titles;
+}
+
+h3{
+	font-family: $font-AG-black;
+	font-size: $font-subtitles;
+}
+
+h4{
+	font-family: $font-AG-black;
+	font-size: $font-titles;
+}
+
+h5{
+	font-family: $font-AG-black;
+	font-size: $font-txt-m;
+}
+
+h6{
+	font-family: $font-AG-black;
+	font-size: $font-txt-s;
+}
+
+hr{
+	margin: 1rem -2rem 1rem;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+b{
+	font-family: $font-AG-black;
+}
+
+p{
+	font-family: $font-AG-light;
+	font-size: $font-txt-l;
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+a{
+	color: $color_brand;
+	font-family: $font-AG-regular;
+	position: relative;
+	&:hover{
+		text-decoration: none;
+	}
+	@include links-hover;
+}
+
+li{
+		font-family: $font-AG-light;
+	font-size: $font-txt-l;
+}

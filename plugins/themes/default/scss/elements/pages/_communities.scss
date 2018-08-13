@@ -1,0 +1,72 @@
+/* ============== Community page ============= */
+
+.well{
+	background: none;
+    border: 0;
+    box-shadow: none;
+    
+    // text info for Community
+    h2{
+	    
+	    // Title
+	    font{
+		    display: block;
+		    margin-bottom: 1.5rem;
+		    font-family: $font-AG-bold;
+	    }
+	    
+	    // Page title
+	    small{
+		    
+		    font{
+			    font: $font-bsb-m $font-serif-italic;
+		    }
+	    }
+    }
+}
+
+.media-list{
+	
+	// Communities and Collections
+	.media.well{
+		//border-bottom: 1px solid red;
+		background: $color_gray_5;
+		
+		.media-body{
+			
+			h4{
+				
+				a{
+					font-family: $font-AG-bold;
+				}
+			}
+		}
+		
+		// inside containers
+		.media-list{
+			
+			.media.well{
+				border-bottom: 0;
+				background: $color_brand_white;
+				
+				h4{
+					font: $font-bsb-m $font-serif-italic;
+				}
+				
+				// inside containers 3rd level
+				.media-list{
+					
+					.media.well{
+						border-bottom: 2px solid $color_gray_5;
+						&:first-child{
+							border-top: 2px solid $color_gray_5;
+						}
+						&:last-child{
+							border-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

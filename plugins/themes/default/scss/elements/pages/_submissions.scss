@@ -1,0 +1,20 @@
+/* ============== submissions page ============= */
+
+
+.page_submissions{
+	
+	// Notifications
+	.cmp_notification{
+		background: $color_gray_20;
+		border-left: none;
+		font-family: $font-baser;
+		
+		// links
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+/* ============== Navbar dspace ============= */
+
+// Container
+.navbar-inverse{
+	background: $color_brand;
+	border: 0;
+    box-shadow: none;
+    min-height: auto;
+    
+    .navbar-nav{
+	    
+	    >li, .dropdown{
+		    
+		    // Links
+		    >a{
+			    color: $color_brand_dark;
+			    text-shadow: none;
+			    font-size: $font-txt-l;
+			    padding: 1rem;
+			    
+			    .caret{
+				    border-top-color: $color_brand_dark;
+				    border-bottom-color: $color_brand_dark;
+			    }
+		    }
+	    }
+	}
+    
+    // logo responsive white
+    .navbar-brand.responsive{
+	        max-width: 26rem;
+    padding: .3rem;
+	    @media (min-width: 768px){
+		    display: none;
+	    }
+    }
+    
+    // toggle button responsive
+    .navbar-toggle{
+	    border: 2px solid $color_brand_white;
+	    //padding: 0.6rem;
+	    margin-top: 1.5rem;
+	    &:hover{
+		    background: $color_brand_white;
+		    
+		    .icon bar{
+			    background: $color_brand;
+		    }
+	    }
+	    
+	    // bars menu
+	    .icon-bar{
+		    width: 19px;
+	    }
+    }
+    
+    // navbar collapse for mobile
+    .in, .collapsing{
+    		border-color:$color_brand_white;
+    		box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    		
+    		// navbar container
+    		.navbar-nav{
+	    		margin: 0 auto;
+	    		//width: 90%;
+	    		
+	    		// dropdown  menus
+	    		.dropdown{
+		    		
+		    		.dropdown-menu{
+			    		position: relative;
+			    		float: none;
+		    		}
+	    		}
+	    		
+	    		// form box
+	    		.navbar-form{
+		    		width: max-content;
+		    		margin-left: 1rem;
+		    		
+		    		.form-group{
+			    		display: inline-block;
+		    		}
+		    		
+		    		button{
+			    		
+		    		}
+	    		}
+    		}
+    }
+}

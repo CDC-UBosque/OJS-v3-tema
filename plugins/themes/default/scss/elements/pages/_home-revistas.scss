@@ -1,0 +1,139 @@
+/* ============== home page ============= */
+
+.pkp_page_index.has_site_logo{
+	
+	#pkp_content_main{
+		
+		width: 100%;
+		
+		&:before,
+		&:after{
+			display: none;
+		}
+		
+		.journals{
+		
+			h2{
+				left: initial;
+				position: initial !important;
+				margin: 0 0 2rem;
+				padding: 0;
+			}
+			
+			.card-columns{
+				column-count: 2;
+				column-gap: 3rem;
+				
+				@media (max-width: 580px){
+					column-count: 1;
+				}
+				
+				.card{
+					margin-bottom: 2rem;
+					border:1px solid #F2F2F2;
+					
+					// image
+					.has_thumb{
+						//background: $color_gray_10;
+						padding: 2rem;
+						box-sizing: border-box;
+						position: relative;
+						
+						&:before{
+							background: $color_gray_10;
+							position: absolute;
+							content: "";
+							width: 100%;
+						    height: 75%;
+						    left: 0;
+						    top: 0;
+						}
+						
+						.thumb{
+							float: none;
+							width: 90%;
+							padding: 0;
+							margin: auto;
+							
+							a{
+								max-height: initial;
+								
+								&:after{
+									display: none;
+								}
+								
+								img{
+									max-height: 18rem;
+									box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+									margin: auto;
+								}
+								
+							}
+							
+						}
+						
+					}
+					
+					// text
+					.body{
+						padding: 0 3rem 1rem;
+						box-sizing: border-box;
+						
+						// title link
+						h3{
+							margin: 0;
+							
+							a{
+								//color: ;
+								font-size: $font-titles;
+								font-family: $font-AG-black;
+								line-height: 25px;
+							}
+							
+						}
+						
+						// links buttons
+						.links{
+							
+							border-top: 1px solid $color_brand;
+							padding-top: 2rem;
+							
+							.view{
+								
+								a{
+									@include buton-s-green;
+									&:after{
+										display: none;
+									}
+								}
+								
+							}
+    
+							.current{
+								
+								a{
+									@include button-s-border-green;
+									&:after{
+										display: none;
+									}
+									&:hover{
+										@include buton-s-green;
+									}
+								}
+								
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+		
+		}
+	
+	}
+	
+	
+}

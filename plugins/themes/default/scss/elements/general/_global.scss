@@ -1,0 +1,42 @@
+/* =========================
+	gloabls styles
+	=======================*/
+	
+p, li, .description{
+	font-family: $font-baser;
+	font-size: 15px;
+    line-height: 24px;
+}
+
+.page{
+	
+	li:nth-child(even){
+		background: $color_gray_5;
+	}
+}
+
+code{
+	font-family: $font-serif-italic;
+	letter-spacing: 1px;
+}
+
+.pkp_structure_main{
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6{
+		font-family: $font-AG-black;
+		font-weight: initial;
+	}
+	
+	.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+	
+}

@@ -1,0 +1,25 @@
+/* ============== Navbar dspace ============= */
+
+// Fix dropdowns to work as hovers
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+    min-width: 30rem;
+    min-width: 30rem;
+    border: 1px solid $color_gray_20;
+    padding: 1rem;
+    text-align: right;
+    
+    >li{
+	    
+	    // Links
+	    >a{
+		    color: $color_brand_dark;
+		    display: inline-block;
+		    &:hover{
+			    background: none;
+			    color: $color_brand_dark;
+		    }
+	    }
+    }
+ }

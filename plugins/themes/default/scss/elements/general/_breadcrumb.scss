@@ -1,0 +1,31 @@
+/* ============== breadcrumb dspace ============= */
+
+// container
+.container{
+	
+	// breadcrumb
+	.breadcrumb{
+		background: $color_gray_5;
+	    display: inherit;
+	    border-radius: 4px;
+	    text-transform: initial;
+	    letter-spacing: 0;
+	    border: 0;
+	    font-size: initial;
+	    cursor: initial;
+	    &:hover{
+		    background: $color_gray_5;
+	    }
+		
+		li{
+			color: $color_text;
+			font: $font-baser-m $font-serif-italic;
+			
+			a{
+				color: $color_text;
+				font: $font-baser-m $font-serif-italic;
+			}
+		}
+	}
+}
+

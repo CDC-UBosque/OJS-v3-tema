@@ -1,0 +1,277 @@
+@mixin buttons{
+	color: $bg-white;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-xxl;
+	border: 2px solid;
+	letter-spacing: 3px;
+	margin: 12rem auto 0;
+    position: relative;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+	&:before{
+		 position: absolute;
+		 content: "";
+		 height: 2px;
+		 width: 6rem;
+		 left: -4rem;
+		 background: $bg-white;
+		 top: -4rem;
+	}
+	&:after{
+		position: absolute;
+		content: "";
+		height: 3px;
+		width: 80%;
+		left: 10%;
+		background: $bg-white;
+		bottom: 0%;
+		visibility: hidden;
+	}
+	&:hover{
+		&:after{
+			visibility: visible;
+			width: 80%;
+			bottom: 12%;
+		}
+	}
+}
+
+@mixin buttons-brown{
+	
+	color: $color-font-brown;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	border: 2px solid $color-font-brown;
+	letter-spacing: 3px;
+	margin: 0rem auto 3rem;
+    position: relative;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+	&:before{
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 50%;
+		left: -30%;
+		background: $color-font-brown;
+		bottom: -70%;
+	}
+	&:hover{
+		background: $color-font-brown;
+		color: $bg-white;
+		&:after{
+			visibility: hidden;
+		}
+	}
+	
+}
+
+@mixin buttons-brown-fill{
+	
+	color: $bg-white;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	background: $color-font-brown;
+	border: 2px solid $color-font-brown;
+	letter-spacing: 3px;
+	margin: 0rem auto 3rem;
+    position: relative;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+	&:before{
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 50%;
+		left: -30%;
+		background: $color-font-brown;
+		bottom: -70%;
+	}
+	&:hover{
+		background: $bg-white;
+		color: $color-font-brown;
+		&:after{
+			visibility: hidden;
+		}
+	}
+	
+}
+
+@mixin buttons-white-line{
+	
+	color: $bg-white;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	border: 2px solid $bg-white;
+	letter-spacing: 3px;
+	margin: 0rem auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    display: inline-block;
+	&:hover{
+		background: $bg-white;
+		color: $color-font;
+	}
+	
+}
+
+@mixin buttons-white-fill{
+	
+	color: $color-aqua;
+	background: $bg-white;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	border: 2px solid $bg-white;
+	letter-spacing: 3px;
+	margin: 0rem auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    display: inline-block;
+	&:hover{
+		background: none;
+		color: $bg-white;
+	}
+	
+}
+
+@mixin buttons-turq-line{
+	
+	color: $color-aqua;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	border: 2px solid $color-aqua;
+	letter-spacing: 3px;
+	margin: 0rem auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    display: inline-block;
+	&:hover{
+		background: $color-aqua;
+		color: $bg-white;
+	}
+	
+}
+
+@mixin buttons-turq-fill{
+	
+	color: $bg-white;
+	font-family: $font-AG-regular;
+	font-size: $font-txt-m;
+	border: 2px solid $color-aqua;
+	background: $color-aqua;
+	letter-spacing: 3px;
+	margin: 0rem auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    display: inline-block;
+	&:hover{
+		background: $bg-white;
+		color: $color-aqua;
+	}
+	
+}
+
+@mixin links-hover{
+	&:after{
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 0%;
+		left: 0%;
+		background: $color_brand_dark;
+		bottom: 0%;
+		visibility: hidden;
+	}
+	&:hover, &:focus{
+		text-decoration: none;
+		color: $color_brand_dark;
+		&:after{
+			visibility: visible;
+			width: 100%;
+			bottom: 0%;
+		}
+	}
+}
+
+@mixin accordions{
+	
+				//button
+				.card{
+					background: none;
+					border: 1px solid $color-aqua;
+					margin-bottom: 1rem;
+					
+					//header
+					.card-header{
+						background: none;
+						border-bottom: none;
+						
+						h5{
+							line-height: 19px;
+						}
+						
+						.btn-link{
+							color: $color-aqua;
+							padding-left: 0;
+							position: relative;
+							width: 100%;
+							text-align: left;
+							display: contents;
+							&:after{
+								position: absolute; 
+								content: "\f062";
+								font-family: "Font Awesome 5 Free";
+								font-weight: 900;
+								color: $color-aqua;
+								right: 4%;
+								top: 1rem
+							}
+						
+						.btn-link.collapsed{
+							position: relative;
+							&:after{
+								position: absolute;
+								content: "\f063";
+								font-family: "Font Awesome 5 Free";
+								font-weight: 900;
+								color: $color-aqua;
+								right: 4%;
+								top: 1rem;
+							}
+						}
+					}
+					
+					.collapse, .collapsing{
+						//border-top: 1px solid $color-aqua;
+						.card-body{
+							padding-top: 0;
+							font-family: $font-AG-light;
+							font-size: $font-txt-l;
+							
+							
+						}
+					}
+				}
+			}
+		
+}
+
+@mixin grid-event-repository{
+	@include inline-block(top);
+	@include grid-porcentaje(6);
+	float: left;
+	@media only screen and (max-width: $tablet-2){
+		@include grid-porcentaje(12);
+	}
+}

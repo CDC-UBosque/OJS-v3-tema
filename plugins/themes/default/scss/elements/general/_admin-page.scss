@@ -1,0 +1,104 @@
+/* ============== admin page OJS ============= */
+
+// hader menu container
+.pkp_page_submissions,
+.pkp_page_user,
+.pkp_page_management,
+.pkp_page_admin{
+	
+	// -------------------
+	// container
+	.pkp_structure_main{
+		
+		// header page
+		.pkp_page_title{
+			
+			background: $color_gray_5;
+			
+			h1{
+				font-size: 2em;
+			}
+						
+		}
+		
+		// tabs section
+		#dashboardTabs{
+			
+			.ui-tabs-nav{
+				background: none;
+				
+				// tab active
+				.ui-state-active[aria-selected="true"]{
+					
+					background: none;
+					
+					a{
+						
+						color: $color_text;
+						font-family: $font-AG-black;
+						
+						&:before{
+							display: none;
+						}
+						
+						&:after{
+							position: absolute;
+							background: $color_brand;
+							height: 4px;
+							width: 90%;
+							bottom: 0;
+							left: 2%;
+							content: "";
+							visibility: visible;
+						}
+						
+					}
+					
+				}
+				
+				// tab default
+				.ui-state-default{
+					
+					background: none;
+					
+					a{
+						
+						color: $color_gray_60;
+						font-family: $font-AG-light;
+						font-weight: initial;
+						
+						&:before{
+							display: none;
+						}
+						
+						&:hover{
+							
+							&:after{
+								position: absolute;
+								background: $color_brand;
+								height: 4px;
+								width: 90%;
+								bottom: 0;
+								left: 2%;
+								content: "";
+								visibility: visible;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		// Panel contenido
+		.pkp_content_panel{
+			
+		}
+		
+	}
+	
+}

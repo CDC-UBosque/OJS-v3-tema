@@ -60,7 +60,23 @@
 </div>
 *}
 
-             <!-- UEB footer -->
+
+
+
+{* 
+	
+READMORE ELEMENT FILES
+	
+This 3 lines makes the read more/ show less function
+It only works in the footer section , it should be at the end of templates files
+
+*}
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/plugins/themes/default/js/readmore.js"></script>
+<script src="/plugins/themes/default/js/readmore-anchor.js"></script>
+
 <footer id="footer">
 	
 	<div class="section-1">

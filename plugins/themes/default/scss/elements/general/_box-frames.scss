@@ -1,0 +1,30 @@
+/* ============== sidebar admin OJS ============= */
+
+// hader menu container
+.pkp_structure_page{
+	
+	.pkp_controllers_grid{
+	    margin-bottom: 2rem;
+	    box-shadow: none;
+	    border-radius: 10px;
+	    border: 1px solid $color_gray_5;
+	    
+	    .header{
+		    border-top-left-radius: 10px;
+		    border-top-right-radius: 10px;
+		    background: $color_gray_5;
+	    }
+	    
+	    .gridPagingScrolling{
+		    background: $color_gray_5;
+		    border-bottom-right-radius: 10px;
+		    border-bottom-left-radius: 10px;
+	    }
+	    
+	    thead{
+		    background: $color_gray_5;
+	    }
+	    
+	}
+	
+}

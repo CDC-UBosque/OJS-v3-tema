@@ -55,9 +55,9 @@
 						</a>
 					</h3>
 					{if $description}
-						<div class="description read-more">
+						<article class="description">
 							{$description|nl2br}
-						</div>
+						</article>
 						
 					{/if}
 					<ul class="links">
@@ -92,7 +92,12 @@
 		{/if}
 			
 	</div>
+	
+	
+ 
 
 </div><!-- .page -->
 
+	
+  
 {include file="frontend/components/footer.tpl"}

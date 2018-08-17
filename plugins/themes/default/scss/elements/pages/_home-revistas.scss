@@ -4,7 +4,7 @@
 	
 	#pkp_content_main{
 		
-		width: 100%;
+		width: 85%;
 		
 		&:before,
 		&:after{
@@ -135,5 +135,8 @@
 	
 	}
 	
+	.pkp_structure_sidebar{
+		width: 14%;
+	}
 	
 }

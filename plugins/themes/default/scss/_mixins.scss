@@ -186,16 +186,16 @@
 	&:after{
 		position: absolute;
 		content: "";
-		height: 1px;
+		height: 2px;
 		width: 0%;
 		left: 0%;
-		background: $color_brand_dark;
+		background: $color_brand;
 		bottom: 0%;
 		visibility: hidden;
 	}
 	&:hover, &:focus{
 		text-decoration: none;
-		color: $color_brand_dark;
+		color: $color_brand;
 		&:after{
 			visibility: visible;
 			width: 100%;

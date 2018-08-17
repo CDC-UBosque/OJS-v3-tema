@@ -1,0 +1,117 @@
+/* ============== sidebar admin OJS ============= */
+
+// hader menu container
+.pkp_page_submissions,
+.pkp_page_user,
+.pkp_page_management,
+.pkp_page_admin{
+	
+	// -------------------
+	// Navigation top menu
+	.pkp_structure_head[role="banner"]{
+		background: $color_gray_5;
+		
+		#navigationPrimary{
+			
+			// list active
+			.pkp_tasks{
+				
+				a{
+					background: $color_brand;
+					color: $color_brand_white;
+					padding: 12px 16px 12px 12px;
+					&:hover{
+						padding: 12px 16px 12px 12px;
+					}
+				}
+				
+			}
+			
+			// list not active
+			li{
+				
+				a{
+					color: $color_text;
+					text-shadow: none;
+					word-break: break-all;
+					
+					&:hover{
+						background: $color_brand;
+						border: 0px;
+						color: $color_brand_white;
+						padding: 12px 16px 12px 12px;
+					}
+					
+				}
+				
+			}
+			
+			// li area expanded true
+			li[aria-expanded="true"]{
+				
+				a{
+					color: $color_brand_white;
+					text-shadow: none;
+					background: $color_brand;
+					
+					&:hover{
+						background: $color_brand;
+						border: 0px;
+						color: $color_brand_white;
+						padding: 12px 16px 12px 12px;
+					}
+					
+				}
+				
+				li{
+					background: $color_brand;
+					color: $color_brand_white;
+					
+					a{
+						color: $color_brand_white;
+						&:after{
+							background: $color_brand_white;
+						}
+					}
+					
+				}
+				
+			}
+			
+			// li area expanded false
+			li[aria-expanded="false"]{
+				
+				a{
+					color: $color_text;
+					text-shadow: none;
+					//background: $color_brand;
+					
+					&:hover{
+						background: $color_brand;
+						border: 0px;
+						color: $color_brand_white;
+						padding: 12px 16px 12px 12px;
+					}
+					
+				}
+				
+				li{
+					background: $color_brand;
+					color: $color_brand_white;
+					
+					a{
+						color: $color_brand_white;
+						&:after{
+							background: $color_brand_white;
+						}
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -35,3 +35,33 @@
 	}
 	
 }
+
+
+// hader menu administration
+.pkp_structure_page{
+	// -------------------
+	// Navigation top menu
+	.pkp_navigation_user{
+		background: $color_brand;
+		
+		ul{
+			background: $color_brand;
+			
+			li{
+				
+				a{
+					text-shadow: none;
+					
+					&:hover{
+						background: $color_brand;
+						text-decoration: none;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+}

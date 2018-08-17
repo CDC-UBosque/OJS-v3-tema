@@ -40,5 +40,5 @@
 <script src="/plugins/themes/default/js/readmore.js"></script>
 <script src="/plugins/themes/default/js/see-more-txt.js"></script>
 
-	<link rel="stylesheet" href="/plugins/themes/default/styles/custom.css" type="text/css">
+	<link rel="stylesheet" href="/plugins/themes/default/scss/custom.css" type="text/css">
 </head>

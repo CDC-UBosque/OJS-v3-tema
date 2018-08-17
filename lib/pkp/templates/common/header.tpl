@@ -33,22 +33,31 @@
 			<div class="pkp_navigation" id="headerNavigationContainer">
 
 				{* Logo or site title *}
-				<div class="pkp_site_name">
-					{if $currentContext && $multipleContexts}
-						{url|assign:"homeUrl" journal="index" router=$smarty.const.ROUTE_PAGE}
-					{else}
-						{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
-					{/if}
-					{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-						<a href="{$homeUrl}" class="is_img">
-							<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
-						</a>
-					{else}
-						<a href="{$homeUrl}" class="is_img">
-							<img src="{$baseUrl}/templates/images/structure/logo.png">
-						</a>
-					{/if}
-				</div>
+					<div class="pkp_site_name">
+						{if $currentContext && $multipleContexts}
+							{url|assign:"homeUrl" journal="index" router=$smarty.const.ROUTE_PAGE}
+						{else}
+							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
+						{/if}
+						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+							<a href="{$homeUrl}" class="is_img">
+								
+								<img src="{$baseUrl}/plugins/themes/default/images/svg/logo_UEB.svg" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+								{*<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}> *}
+								
+							</a>
+						{else}
+							<a href="{$homeUrl}" class="is_img">
+								
+								<img src="{$baseUrl}/plugins/themes/default/images/svg/logo_UEB.svg" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+								{*<img src="{$baseUrl}/templates/images/structure/logo.png"> *}
+								
+							</a>
+						{/if}
+					</div>
+				
+				
+				
 
 				{* Primary navigation menu *}
 				{if $isUserLoggedIn}
